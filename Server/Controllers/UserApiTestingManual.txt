@@ -1,0 +1,57 @@
+#this is the api testing manual for the user Routes
+# register api testing
+=========================
+#step :1 open postman
+#step :2 create a new request
+#step :3 select the post request
+#step :4 enter the url (http://localhost:8000/api/user/register)
+#step :5 enter the body (raw)
+#step :6  type the detils in the body({
+    "name" : "greatStack",
+    "email":"greatStack@gmail.com",
+    "password": "123456"
+})
+#step :7 click on send
+#step :8 check the response
+
+# login api testing
+====================
+#step :1 open postman
+#step :2 create a new request
+#step :3 select the post request
+#step :4 enter the url (http://localhost:8000/api/user/login)
+#step :5 enter the body (raw)
+#step :6  type the detils in the body({
+    "email":"greatStack@gmail.com",
+    "password": "123456"
+})
+#step :7 click on send
+#step :8 check the response
+
+# user credit api testing
+========================
+#step :1 open postman
+#step :2 create a new request
+#step :3 select the post request
+#step :4 enter the url (http://localhost:8000/api/user/userCredit)
+#step :5 enter the header 
+#step :6   key is token and value is the token ("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NGUyOWY1MTdhNzlkYjEzNDA4YmE5OSIsImlhdCI6MTc2Njc0MDE2NywiZXhwIjoxNzY2NzQzNzY3fQ.Yi3zqngX9Gl4s-1frbnNmF4m3DB1-fx4hzTUo9RcqK8")
+#step :7 click on send
+#step :8 check the response
+
+# generate image api testing
+==========================
+#step :1 open postman
+#step :2 create a new request
+#step :3 select the post request
+#step :4 enter the url (http://localhost:8000/api/image/generateImage)
+#step :5 enter the header 
+#step :6   key is token and value is the token ("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NGUyOWY1MTdhNzlkYjEzNDA4YmE5OSIsImlhdCI6MTc2Njc0MDE2NywiZXhwIjoxNzY2NzQzNzY3fQ.Yi3zqngX9Gl4s-1frbnNmF4m3DB1-fx4hzTUo9RcqK8")
+#step :7 enter the body (raw)
+#step :8 type the detils in the body({
+    "prompt" : "A beautiful landscape with a mountain range and a river flowing through it"
+})
+#step :9 click on send
+#step :8 check the response
+
+

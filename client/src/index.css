@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+/* Apply the Outfit font family globally */
+*
+{
+  font-family: 'Outfit';
+}
+.placeholder-color
+{
+  color: #e0e0e0;
+  font-weight: 300;
+}
+/* now we will create the pages 3 pages in the pages folder*/

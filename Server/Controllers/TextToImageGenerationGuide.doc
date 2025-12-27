@@ -1,0 +1,32 @@
+Text to Image API
+To generate a picture from text, the text to image API is available at #https://clipdrop-api.co/text-to-image/v1.
+
+The request must be an https #POST and its body must be a #multipart/form-data with the following fields:
+
+a required prompt text field describing the desired image, with a max length of a 1000 characters.
+In case of success:
+
+the response mime-type will be image/png and the response body will be an image with dimensions of 1024x1024 pixels.
+
+the response headers will include a x-remaining-credits property to tell you how many credits you have left and a x-credits-consumed property to tell you how many credits were consumed by your request.
+
+In case of an error:
+
+the response mime-type is application/json, error type is indicated by the response status code and details are in the json body, ie
+{ "error": "No api key provided" }
+
+
+const form = new FormData()
+form.append('prompt', 'shot of vaporwave fashion dog in miami')
+
+fetch('https://clipdrop-api.co/text-to-image/v1', {
+method: 'POST',
+headers: {
+'x-api-key': YOUR_API_KEY,
+},
+body: form,
+})
+.then(response => response.arrayBuffer())
+.then(buffer => {
+// buffer here is a binary representation of the returned image
+})

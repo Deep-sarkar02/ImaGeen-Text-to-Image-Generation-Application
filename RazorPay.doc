@@ -1,0 +1,9 @@
+# RazorPay Guide
+# create account
+# get the key_secret and key_id
+# go to Usercontroller  and create the function to commtrol the payment
+# also on the routes create the payment route 
+# also we have to make some chnages inthe client or the frontppage
+# in thhe BuyCredits.js file we have to make some changes
+# in the index.html we habe to paste <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+

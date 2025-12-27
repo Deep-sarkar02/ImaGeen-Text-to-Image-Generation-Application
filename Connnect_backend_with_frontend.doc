@@ -1,0 +1,6 @@
+# how the frontend and the backedn are connected
+# .env in the frontend
+# we will store the backend url in the .env file
+# now go to appContext.js
+# now follow that file and you will get the idea
+# 
