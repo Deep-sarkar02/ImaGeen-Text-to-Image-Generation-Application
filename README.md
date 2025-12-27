@@ -1,5 +1,7 @@
 # 🎨 ImaGeen - AI Text-to-Image Generation Application
 
+![ImaGeen Banner](./docs/images/banner.png)
+
 ImaGeen is a powerful, full-stack AI image generation platform that allows users to transform their imagination into stunning visual art in seconds. Simply type a prompt, and watch the magic happen!
 
 ---
